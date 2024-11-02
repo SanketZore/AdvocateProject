@@ -1,0 +1,31 @@
+.footer {
+    padding: 8px; /* Increase padding for more spacing */
+    background-color: #0A1128; /* Dark background */
+    color: white; /* White text color */
+    text-align: center; /* Center align text */
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    gap: 15px; /* Space between items */
+}
+
+.social-icons {
+    display: flex;
+    gap: 20px; /* Space between social icons */
+    justify-content: center; /* Center icons */
+}
+
+.social-icons svg {
+    font-size: 24px; /* Increase icon size */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.social-icons svg:hover {
+    color: #FFD700; /* Change color on hover to a gold shade */
+}
+
+.footer p {
+    font-size: 14px; /* Slightly smaller font for copyright text */
+    margin: 0; /* Remove default margin */
+}

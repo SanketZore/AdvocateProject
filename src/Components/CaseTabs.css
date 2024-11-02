@@ -1,0 +1,42 @@
+/* CaseTabs.css */
+
+.case-tabs {
+  display: flex;
+  justify-content: space-around; /* Space buttons evenly */
+  border-bottom: 2px solid #ddd; /* Light line below the tabs */
+  margin: 20px 0; /* Add some margin for spacing */
+}
+
+.case-tabs button {
+  background-color: transparent; /* Transparent background */
+  border: none; /* Remove borders */
+  color: #555; /* Default text color */
+  padding: 10px 20px; /* Add some padding */
+  text-align: center; /* Center text */
+  font-size: 16px; /* Font size */
+  cursor: pointer; /* Pointer cursor on hover */
+  position: relative; /* Position for pseudo-element */
+  transition: color 0.3s; /* Smooth transition for color */
+}
+
+.case-tabs button:hover {
+  color: #4CAF50; /* Change text color on hover */
+}
+
+.case-tabs button.active {
+  color: #4CAF50; /* Active tab text color */
+  font-weight: bold; /* Bold text for active tab */
+}
+
+.case-tabs button.active::after {
+  content: ''; /* Create a pseudo-element */
+  display: block; /* Make it a block element */
+  height: 2px; /* Height of the underline */
+  background-color: #4CAF50; /* Color of the underline */
+  position: absolute; /* Position it relative to the button */
+  left: 50%; /* Center it horizontally */
+  right: 50%; /* Center it horizontally */
+  bottom: -4px; /* Position it below the button */
+  transform: translateX(-50%); /* Center it */
+  width: 100%; /* Make it full width */
+}

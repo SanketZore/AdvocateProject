@@ -1,0 +1,106 @@
+/* General styles for the About component */
+.about {
+    padding: 40px;
+    max-width: 800px;
+    margin: 40px auto;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+ }
+ 
+ /* Header styling */
+ .about-header {
+    margin-bottom: 30px;
+ }
+ 
+ .about-header h2 {
+    font-size: 32px;
+    margin-bottom: 10px;
+    color: #333;
+ }
+ 
+ .about-header p {
+    font-size: 18px;
+    color: #666;
+ }
+ 
+ /* About content styling */
+ .about-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+ }
+ 
+ /* Individual section styling */
+ .about-section {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    transition: transform 0.2s, box-shadow 0.2s;
+ }
+ 
+ .about-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+ }
+ 
+ .about-section h3 {
+    font-size: 24px;
+    margin: 15px 0;
+    color: #333;
+ }
+ 
+ .about-section p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+ }
+ 
+ /* Features list styling */
+ .features-list {
+    list-style: none;
+    padding: 0;
+ }
+ 
+ .features-list li {
+    font-size: 16px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+ }
+ 
+ .icon {
+    color: #4caf50;
+    margin-right: 10px;
+    font-size: 20px;
+ }
+ 
+ /* Contact section styling */
+ .contact-info {
+    margin-top: 10px;
+ }
+ 
+ .contact-icon {
+    margin-right: 8px;
+    color: #333;
+ }
+ 
+ /* Responsive styling */
+ @media (max-width: 768px) {
+    .about {
+       padding: 20px;
+    }
+ 
+    .about-header h2 {
+       font-size: 28px;
+    }
+ 
+    .about-section h3 {
+       font-size: 20px;
+    }
+ 
+    .about-section p {
+       font-size: 14px;
+    }
+ }
+ 

@@ -1,0 +1,155 @@
+/* Contact.css */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+.contact-container {
+  max-width: 800px; /* Set a max width for the container */
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.contact-title {
+  font-size: 2rem; /* Adjusted for better fit */
+  font-weight: bold;
+  text-align: center;
+  color: black; /* Primary color */
+  margin-bottom: 1.5rem;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* One column layout */
+  gap: 1rem; /* Reduced gap to prevent overflow */
+}
+
+@media (min-width: 768px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr; /* Two columns layout for larger screens */
+  }
+}
+
+.contact-card {
+  background-color: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+  overflow: hidden; /* Prevent content overflow */
+  height: auto; /* Allow cards to adjust height */
+}
+
+.message-card,
+.info-card {
+  width: 100%; /* Ensure both cards are the same width */
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+}
+
+.card-title {
+  font-size: 1.5rem; /* Adjusted for better fit */
+  font-weight: 600;
+  color: #4f46e5; /* Primary color */
+  margin-bottom: 1rem;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; /* Reduced gap to prevent overflow */
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-weight: 500;
+  margin-bottom: 0.25rem; /* Reduced margin */
+}
+
+input,
+textarea {
+  border: 2px solid #d1d5db;
+  border-radius: 0.375rem;
+  padding: 0.75rem;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #4f46e5; /* Primary color */
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(79, 70, 229, 0.5);
+}
+
+textarea {
+  min-height: 120px; /* Set a minimum height for the textarea */
+  resize: none; /* Disable resizing */
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #4f46e5; /* Primary color */
+  color: white;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  border: none;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #4338ca; /* Darker shade for hover effect */
+}
+
+.info-card {
+  /* Additional styling for contact information card */
+}
+
+.info-item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.5rem 0; /* Adjusted padding */
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.info-item:last-child {
+  border-bottom: none; /* Remove border from last item */
+}
+
+.icon {
+  font-size: 1.5rem; /* Adjust size of the icons */
+  color: #4f46e5; /* Primary color */
+  min-width: 30px; /* Ensure space for the icon */
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .contact-title {
+    font-size: 1.5rem; /* Smaller title for mobile */
+  }
+
+  .card-title {
+    font-size: 1.25rem; /* Smaller title for mobile */
+  }
+
+  .info-item {
+    font-size: 0.875rem; /* Smaller font for mobile */
+  }
+}

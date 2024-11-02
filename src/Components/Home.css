@@ -1,0 +1,79 @@
+/* General styling for the home component */
+.home {
+   padding: 20px;
+   max-width: 800px;
+   margin: 0 auto;
+}
+
+/* Single column layout for the customer list */
+.customer-list {
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+   padding: 20px;
+}
+
+/* Styling for each customer card */
+.customer-item {
+   background-color: #fff;
+   border-radius: 8px;
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   padding: 15px;
+   text-align: left;
+   cursor: pointer;
+   transition: transform 0.2s, box-shadow 0.2s;
+   width: 100%;
+}
+
+/* Hover effect for better interactivity */
+.customer-item:hover {
+   transform: translateY(-5px);
+   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Styling for the customer name */
+.customer-item h3 {
+   margin: 0;
+   font-size: 18px;
+   font-weight: 600;
+   color: #333;
+}
+
+/* Responsive adjustments for different screen sizes */
+
+/* For small devices (e.g., Android phones) */
+@media (max-width: 600px) {
+   .home {
+      padding: 10px;
+   }
+
+   .customer-item {
+      padding: 10px;
+   }
+
+   .customer-item h3 {
+      font-size: 16px;
+   }
+}
+
+/* For larger devices (e.g., tablets and laptops) */
+@media (min-width: 601px) and (max-width: 1024px) {
+   .home {
+      padding: 15px;
+   }
+
+   .customer-item {
+      padding: 12px;
+   }
+}
+
+/* For desktop devices (wide screens) */
+@media (min-width: 1025px) {
+   .customer-item {
+      padding: 20px;
+   }
+}
+
+
+/* ----------------------for CaseTabs------------------- */
+
